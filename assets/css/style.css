@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  
+  :root {
+    --font: "Marcellus";
+    --font1: "Open Sans SemiCondensed";
+    --white: #ffffff;
+    --black: #000000;
+    --pink: #ef2853;
+    --grey: #656565;
+    --lightgrey: #262626;
+    --coffee: #be9c79;
+    --gutter-width: 12px;
+  }
+  
+  /* Utillity Class */
+  
+  ul li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .d-flex {
+    display: flex;
+  }
+  
+  .f-wrap {
+    flex-wrap: wrap;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-end {
+    justify-content: end;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .w-1 {
+    width: 8.33%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-2 {
+    width: 16.66%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-3 {
+    width: 25%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-4 {
+    width: 33.33%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-5 {
+    width: 41.66%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-6 {
+    width: 50%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-7 {
+    width: 58.33%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-8 {
+    width: 66.66%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-9 {
+    width: 75%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-10 {
+    width: 83.33%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-11 {
+    width: 91.66%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-12 {
+    width: 100%;
+    padding: 0 var(--gutter-width);
+  }
+  
+  .w-25 {
+    width: 25%;
+  }
+  
+  .w-50 {
+    width: 50%;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .py-100 {
+    padding: 100px 0;
+  }
+  
+  .py-70 {
+    padding: 70px 0;
+  }
+  
+  .py-40 {
+    padding: 40px 0;
+  }
+  
+  ::selection {
+    background-color: var(--coffee);
+    color: white;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Clothing Start */
+
+  .heading h1{
+    display:inline-block;
+    position:relative;
+    overflow:hidden;
+    font-size:50px;
+   font-family:var(--font);
+   margin-bottom:50px;
+    }
+
+  .heading h1::after{
+    content:"";
+    width:50%;
+    height:100%;
+    background-color:var(--coffee);
+    position:absolute;
+    bottom:0;
+    left:-100%;
+    transition:all 3s linear;
+    z-index:-1;
+  }
+  
+  .heading h1:hover::after{
+    width:100%;
+    left:0;
+  }
+/* images */
+  .s_img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow:hidden;
+    margin-bottom: 50px;
+  }
+  
+  .s_img:hover .hover-img {
+    opacity:1;
+    transition:all 0.5s linear;
+  }
+  
+  .s_img .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    opacity:0;
+  }
+  
+  .s_img .s-1 img{
+    width: 100%;
+    display: block;
+  }
+
+  .p-title{
+    font-family:var(--font);
+    font-weight:500;
+    font-size:18px;
+    color:var(--black);
+    margin-top:20px;
+    cursor: pointer;
+  }
+
+  .price{
+    font-family:var(--font1);
+    font-weight:200;
+    font-size:17px;
+    color:var(--lightgrey);
+    margin-top:8px;
+    display:inline-block;
+    letter-spacing: 2px;
+  }
+
+  .dsc{
+    font-family:var(--font1);
+    font-weight:200;
+    font-size:17px;
+    color:var(--lightgrey);
+    margin-top:8px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+  }
+
+  .s-1{
+    overflow: hidden;
+   position: relative;
+   border:0.7px solid black;
+  }
+  
+.round{
+  padding: 15px 5px;
+  border-radius: 50%;
+  background-color:rgb(93, 25, 93) ;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.sale{
+  font-size: 14px;
+  color:var(--white);
+}
+
+.fa-star{
+  font-size:20px;
+  border:1px;
+  margin-top: 9px;
+  text-align:left;
+}
+
+.p-title:hover{
+  color:rgb(93, 25, 93);
+}
+
+.atc{
+  padding: 17px 8px;
+  background-color:var(--white);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color:var(--black);
+  font-size:20px;
+  cursor: pointer;
+}
+
+.s_img:hover .atc {
+  opacity:1;
+  transition:all 0.2s linear;
+}
+
+.s_img .atc{
+  opacity:0; 
+}
